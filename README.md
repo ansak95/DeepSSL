@@ -1,16 +1,24 @@
-# Remaining Useful Life prediction with a Deep Self-Supervised Learning Approach
+# 🚀 Deep Self-Supervised Learning for Remaining Useful Life Prediction
 
-The aim of this research is to develop an innovative ML methodology (i.e. Self-Supervised Learning) that allows AI to learn from available data without external annotations, thus improving the results of prognostics in predictive maintenance despite the limitation of labelled data.
+## Project Introduction
+This repository showcases a cutting-edge approach to Remaining Useful Life (RUL) prediction, utilizing Deep Self-Supervised Learning. This innovative method represents a paradigm shift in Machine Learning, enabling AI systems to extract meaningful insights from available unlabelled data, without the need for externally provided annotations. This research addresses a critical challenge in predictive maintenance, particularly in environments where labeled data is scarce or difficult/expensive to obtain.
 
-# Description
+## 📖 Detailed Description
 
-This work was carried out within the PREDICT project, involving Anass Akrim, Christian Gogu (Principal Investigator), Michel Salaun and Rob Vingerhoeds at the University of Toulouse (Institut Clément Ader and ISAE-SUPAERO DISC).
+### Background
+Initiated as part of the PREDICT project, this research represents a collaborative effort between experts at the University of Toulouse, including Institut Clément Ader and ISAE-SUPAERO DISC. The project focuses on leveraging the untapped potential of self-supervised learning in the domain of Prognostics and Health Management (PHM). Specifically, it aims to demonstrate the efficacy of pre-training Deep Learning models on large volumes of unlabeled sensor data and applying them to PHM tasks like RUL estimation, even with minimal labeled data availability.
 
-The idea behind this project is to to investigate whether pre-training DL models in a self-supervised way on unlabeled sensors data can be useful for downstream tasks in PHM (i.e. Remaining Useful Life estimation) with only Few-Shots Learning.
+### Research Focus
+The core challenge tackled here is the scarcity of data in fatigue damage prognostics. The project's ambition is to accurately estimate the Remaining Useful Life of critical components, such as aluminum panels commonly used in aerospace structures, which are prone to fatigue cracks. To achieve this, the research utilizes strain gauge data, a type of data that presents unique challenges due to its nature and collection methods.
 
-In this research, the issue of data scarcity in a fatigue damage prognostics problem is addressed. The interest is in estimating the RUL of aluminum panels (typical of aerospace structures) subject to fatigue cracks from strain gauge data.
 
-A synthetic dataset is used, composed of a large unlabeled dataset (i.e. strain gauges data of structures before failure) for pre-training, and a smaller labeled dataset (i.e. strain gauges data of structures until failure) for fine-tuning. If you find this repository helpful, please cite our work:
+### Dataset Composition
+A synthetic dataset forms the backbone of this research. It is strategically divided into two key components:
+- A large, unlabeled dataset comprising strain gauge readings from structures prior to failure, used for the initial phase of model pre-training.
+- A smaller, labeled dataset containing strain gauge data up to the point of structural failure, utilized for subsequent fine-tuning of the models.
+
+### Contribution and Citation
+The findings and methodologies developed in this project could be invaluable to researchers and practitioners in the field. Those who find this repository beneficial for their work are encouraged to cite the published research:
 
 ```
 @article{akrim2023self,
@@ -23,7 +31,7 @@ A synthetic dataset is used, composed of a large unlabeled dataset (i.e. strain 
   publisher={Elsevier}}
 ``` 
 
-# Acknowledgements
+## 🙏 Acknowledgements
 
 ◦ This work was partially funded by Occitanie region under the Predict project. This funding is gratefully acknowledged. 
 
